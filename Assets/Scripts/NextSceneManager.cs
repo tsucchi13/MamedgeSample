@@ -41,6 +41,7 @@ public class NextSceneManager : MonoBehaviour
 		displayCountries (1);
 
 
+
 //
 //		correctBeanScore = PlayerPrefs.GetInt ("correctBeanScore" , 0);
 //		Debug.Log (correctBeanScore);
