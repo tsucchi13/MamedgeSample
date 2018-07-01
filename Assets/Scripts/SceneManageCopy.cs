@@ -59,6 +59,10 @@ public class SceneManageCopy: MonoBehaviour
 	public GameObject dish1;
 
 
+	void Start()
+
+
+
 	void Start ()
 	{
 		//最初に各豆のSpriteRendererをgetcomponent
@@ -234,7 +238,6 @@ public class SceneManageCopy: MonoBehaviour
 		//選ばれた6つの国旗名をplayerprefsに保存→NextSceneでそれをgetしてその名前のspriteをResorce.Loadし、spriteに挿入
 		for(int i = 0;i < selectedAsiaSprits.Length;i++){
 			PlayerPrefs.SetString ("Asia" + i.ToString(), selectedAsiaSprits [i].name);
-
 		}
 
 	}

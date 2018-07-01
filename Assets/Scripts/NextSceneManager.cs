@@ -46,7 +46,7 @@ public class NextSceneManager : MonoBehaviour
 //		correctBeanScore = PlayerPrefs.GetInt ("correctBeanScore" , 0);
 //		Debug.Log (correctBeanScore);
 
-		scoreText.text = PlayerPrefs.GetInt ("correctBeanScore").ToString ();
+//		scoreText.text = PlayerPrefs.GetInt ("correctBeanScore").ToString ();
 
 
 
