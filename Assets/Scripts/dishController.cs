@@ -30,11 +30,15 @@ public class dishController : MonoBehaviour {
 		timer -= Time.deltaTime;
 		timerText.text = timer.ToString ("f2");
 
-		if (timer < 0) {
-			Debug.Log ("最後は" + correctBeanCount);
-			PlayerPrefs.SetInt ("correctBeanScore", correctBeanCount);
-			SceneManager.LoadScene("NextScene");
-		}
+//		if (timer < 0) {
+//			Debug.Log ("最後は" + correctBeanCount);
+//			PlayerPrefs.SetInt ("correctBeanScore", correctBeanCount);
+//			SceneManager.LoadScene("NextScene");
+//		}
+
+
+
+
 
 
 
@@ -53,13 +57,24 @@ public class dishController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
-		beanCount += 1;
 
-		if (col.gameObject.tag == this.gameObject.tag && canPoint == true) {
-			Debug.Log ("正解！");
-			correctBeanCount += 1;
-			Debug.Log (correctBeanCount);
+		if (canPoint) {
+
+
+			beanCount += 1;
+
+			if (col.gameObject.tag == this.gameObject.tag) {
+				Debug.Log ("正解！");
+				correctBeanCount += 1;
+				col.gameObject.tag = "Finish";
+//			Destroy (col.gameObject.GetComponent<Rigidbody2D> ());
+
+				Debug.Log (correctBeanCount);
+			}
 		}
+
+
+
 	}
 
 

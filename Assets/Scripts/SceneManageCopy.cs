@@ -59,7 +59,7 @@ public class SceneManageCopy: MonoBehaviour
 	public GameObject dish1;
 
 
-	void Start()
+
 
 
 
