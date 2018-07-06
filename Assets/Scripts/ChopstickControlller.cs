@@ -35,6 +35,8 @@ public class ChopstickControlller : MonoBehaviour
 		chopsticksColliderScript = GetComponentInChildren<ChopsticksColliderScript> ();
 
 		Debug.Log("marge-practice-1");
+		Debug.Log("marge-practice-2");
+
 	}
 		
 	// Update is called once per frame
