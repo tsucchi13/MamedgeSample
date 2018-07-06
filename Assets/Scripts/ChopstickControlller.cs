@@ -33,6 +33,8 @@ public class ChopstickControlller : MonoBehaviour
 	{
 		chopsticksSprite = this.GetComponent<SpriteRenderer> ();
 		chopsticksColliderScript = GetComponentInChildren<ChopsticksColliderScript> ();
+
+		Debug.Log("marge-practice-1");
 	}
 		
 	// Update is called once per frame
@@ -84,6 +86,8 @@ public class ChopstickControlller : MonoBehaviour
 				touchedBeanRigid = chopsticksColliderScript.touchedBean.GetComponent<Rigidbody2D> ();
 				touchedBeanRigid.gravityScale = 0;
 				touchedBeanRigid.constraints = RigidbodyConstraints2D.FreezeAll;
+
+
 
 //				float timer;
 //				timer += Time.deltaTime;
